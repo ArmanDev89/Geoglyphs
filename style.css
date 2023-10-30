@@ -6,8 +6,15 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html{
+    height: 100%;
+}
+
 body{
     position: relative;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 section{
@@ -40,7 +47,6 @@ header{
     height: 5.2vw;
     width: 90%;
     margin: 0 5vw;
-    transition: .3s ease;
 }
 
 .fixed{
@@ -84,7 +90,7 @@ h1{
 .links{
     display: flex;
     justify-content: space-between;
-    width: 37vw;
+    width: 45vw;
     font-size: 0.85vw;
 }
 
@@ -297,7 +303,7 @@ main .button:hover{
 
 .ushtogai_main{
     width: 100%;
-    height: 115vh;
+    height: 120vh;
     background-color: #fff;
 }
 
@@ -365,6 +371,12 @@ main .button:hover{
 
 /*=================Trikvetr====================*/
 
+.trikvetr_main {
+    height: 120vh;
+}
+
+
+
 .trikvetr_pictures{
     width: 70vw;
     display: flex;
@@ -388,6 +400,7 @@ main .button:hover{
 
 .trikvetr_text{
     width: 70vw;
+    height: 100vh;
     margin: 4vw auto;
     font-weight: 500;
     font-size: 1vw;
@@ -398,13 +411,17 @@ main .button:hover{
 }
 
 .trikvetr_main .button{
-    margin-top: 2vw;
+    margin: 2vw auto 0;
+}
+
+.trikvetr_main .yt_video{
+    margin: 5vh 0 0 0;
 }
 
 /*================Interview==================*/
 
 .interview_main{
-    height: 85vh;
+    height: 95vh;
 }
 
 .interview_main .main-title{
@@ -479,6 +496,9 @@ main .button:hover{
 
 footer{
     position: relative;
+    right: 0;
+    left: 0;
+    bottom: 0;
     width: 100vw;
     height: 45vh;
     background-color: rgb(94, 94, 94);
